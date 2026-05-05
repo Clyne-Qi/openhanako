@@ -119,6 +119,7 @@ export const BLOCK_EXTRACTORS = {
 };
 
 BLOCK_EXTRACTORS.present_files = BLOCK_EXTRACTORS.stage_files; // COMPAT(v0.98)
+BLOCK_EXTRACTORS["agent-groupchat_full_agent"] = BLOCK_EXTRACTORS.subagent;
 
 function buildComputerAppApprovalBlock(confirmation) {
   const approval = confirmation?.approval;
